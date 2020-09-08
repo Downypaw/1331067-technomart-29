@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Таня Мальцева](https://up.htmlacademy.ru/htmlcss/29/user/1331067).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Пудов](https://htmlacademy.ru/profile/kamelot43).
 
 ---
 
