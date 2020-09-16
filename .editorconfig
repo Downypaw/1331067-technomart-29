@@ -8,7 +8,7 @@
 # на https://editorconfig.org и в разделе «Download a Plugin»
 # скачайте дополнение для вашего редактора.
 
-root = true
+ root = true
 
 [*]
 charset = utf-8
