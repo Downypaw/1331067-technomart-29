@@ -106,8 +106,8 @@ img {
 }
 
 :active, :hover, :focus {
-    outline: 0;
-    outline-offset: 0;
+  outline: 0;
+  outline-offset: 0;
 }
 
 .header-part {
@@ -199,6 +199,8 @@ img {
 
 .user-menu {
   color: var(--dark-blue);
+  padding: 0;
+  margin: 0;
 }
 
 .menu-option:first-child {
@@ -246,16 +248,6 @@ img {
   background-color: var(--dark-blue-click);
 }
 
-.button-white {
-  background-color: var(--basic-white);
-  text-decoration: none;
-  color: var(--basic-black);
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .button {
   background-color: var(--basic-red);
   color: var(--basic-white);
@@ -266,12 +258,18 @@ img {
   text-align: center;
 }
 
-.button:hover,
-.button:focus{
+.button-white {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+
+.button-red:hover,
+.button-red:focus{
   background-color: var(--red-hover);
 }
 
-.button:active {
+.button-red:active {
   background-color: var(--red-click);
 }
 
@@ -281,14 +279,11 @@ img {
   color: var(--basic-white);
 }
 
-.promo a {
-  color: var(--basic-white);
-  text-decoration: none;
-}
-
 .promo-link {
   background-color: var(--white-promo-button);
   text-align: center;
+  color: var(--basic-white);
+  text-decoration: none;
 }
 
 .promo-link:hover,
@@ -333,6 +328,8 @@ img {
 
 .catalog-path {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-path-link {
@@ -351,6 +348,8 @@ img {
 
 .sorting-options {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .sorting-option {
@@ -383,15 +382,17 @@ img {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   list-style: none;
-  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
-.page {
+.catalog-page {
   color: var(--basic-black);
   line-height: 18px;
   text-decoration: none;
   border: 1px solid var(--grey-border-calm);
   border-radius: 2px;
+  text-align: center;
 }
 
 .active-page {
@@ -401,12 +402,12 @@ img {
 }
 
 
-.page:hover,
-.page:focus {
+.catalog-page:hover,
+.catalog-page:focus {
   border: 1px solid var(--basic-lightgrey);
 }
 
-.page:active {
+.catalog-page:active {
   border: 1px solid var(--basic-red);
 }
 
@@ -428,7 +429,7 @@ img {
   list-style: none;
   font-family: "PT Sans", Arial, sans-serif;
   padding: 0;
-  margin:
+  margin: 0;
 }
 
 .products a {
@@ -473,10 +474,7 @@ img {
 .buy-button {
   background-color: var(--bright-green);
   color: var(--basic-white);
-  font-size: 14px;
-  line-height: 18px;
   box-shadow: inset 0px -3px 0px #367315;
-  text-transform: uppercase;
 }
 
 .buy-button:hover,
@@ -491,7 +489,7 @@ img {
 .bookmark-link {
   border: 3px solid var(--bright-green);
   color: var(--dark-blue);
-  text-transform: uppercase;
+  background-color: transparent;
 }
 
 .bookmark-link:hover,
@@ -505,6 +503,8 @@ img {
 
 .manufacturers {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .manufacturer {
@@ -575,6 +575,8 @@ img {
 .list-of-partners {
   font-size: 18px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .upper-footer {
@@ -612,6 +614,8 @@ img {
 
 .extra-footer-menu {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .extra-menu-item {
@@ -636,6 +640,8 @@ img {
 
 .social-links {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .social-link {
