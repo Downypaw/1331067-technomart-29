@@ -36,6 +36,7 @@
   --red-shadow: rgba(0, 0, 0, 0.24);
   --white-transparent: rgba(255, 255, 255, 0.5);
   --white-promo-button: rgba(255, 255, 255, 0.3);
+  --black-transparent: rgba(0, 0, 0, 0.3);
 }
 
 .page-body {
@@ -109,12 +110,12 @@ img {
     outline-offset: 0;
 }
 
-.header-bookmark {
+.header-part {
   color: var(--basic-white);
 }
 
-.header-cart {
-  color: var(--basic-white);
+.adding {
+  background-color: var(--basic-red);
 }
 
 .header-part:active {
@@ -155,6 +156,7 @@ img {
   color: var(--dark-blue);
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
 }
 
 .login-link, .registration-link {
@@ -162,6 +164,7 @@ img {
   font-size: 21px;
   line-height: 21px;
   background-color: var(--basic-white);
+  text-align: center;
 }
 
 .login-link:hover, .registration-link:hover {
@@ -169,6 +172,41 @@ img {
 }
 
 .login-link:active, .registration-link:active {
+  color: var(--basic-lightgrey);
+}
+
+.user-name {
+  text-decoration: none;
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-name:active {
+  color: var(--basic-lightgrey);
+}
+
+.user {
+  background-color: var(--basic-white);
+}
+
+.user-menu {
+  color: var(--dark-blue);
+}
+
+.menu-option:first-child {
+  list-style: none;
+}
+
+.menu-option-link {
+  color: var(--dark-blue);
+}
+
+.menu-option:hover, .menu-option-link:hover {
+  color: var(--basic-red);
+}
+
+.menu-option:active, .menu-option-link:active {
   color: var(--basic-lightgrey);
 }
 
@@ -195,6 +233,16 @@ img {
   background-color: var(--dark-blue-click);
 }
 
+.button-white {
+  background-color: var(--basic-white);
+  text-decoration: none;
+  color: var(--basic-black);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .button {
   background-color: var(--basic-red);
   color: var(--basic-white);
@@ -202,6 +250,7 @@ img {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .button:hover {
@@ -225,6 +274,7 @@ img {
 
 .promo-link {
   background-color: var(--white-promo-button);
+  text-align: center;
 }
 
 .promo-link:hover {
@@ -266,6 +316,74 @@ img {
   font-size: 18px;
 }
 
+.catalog-path {
+  list-style: none;
+}
+
+.catalog-path-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.tools-category {
+  background-color: var(--basic-grey-background);
+}
+
+.catalog-option {
+  text-transform: uppercase;
+}
+
+.sorting-options {
+  list-style: none;
+}
+
+.sorting-option {
+  text-transform: uppercase;
+  color: var(--black-transparent);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--basic-red);
+}
+
+.sorting-option:hover {
+  color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-red);
+}
+
+.sort {
+  background-color: var(--extralight-brown);
+}
+
+.catalog-option {
+  background-color: var(--extralight-brown);
+}
+
+.pages {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.page {
+  color: var(--basic-black);
+  line-height: 18px;
+  text-decoration: none;
+  border: 1px solid var(--grey-border-calm);
+  border-radius: 2px;
+}
+
+.page:hover {
+  border: 1px solid var(--basic-lightgrey);
+}
+
+.page:hover {
+  border: 1px solid var(--basic-red);
+}
+
+.about-product-block {
+  background-color: var(--basic-grey-background)
+}
+
 .section-head {
   background-color: var(--light-background-part)
 }
@@ -276,11 +394,12 @@ img {
   color: var(--dark-blue);
 }
 
-.popular-products {
+.products {
   list-style: none;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
-.popular-products a {
+.products a {
   text-decoration: none;
 }
 
@@ -288,8 +407,8 @@ img {
   font-size: 18px;
   font-weight: bold;
   line-height: 20px;
-  font-family: "PT Sans", Arial, sans-serif;
   color: var(--basic-black);
+  text-align: center;
 }
 
 .price {
@@ -301,11 +420,13 @@ img {
 .previous-price {
   color: var(--grey-style);
   text-decoration: line-through;
+  text-align: center;
 }
 
 .current-price {
   background-color: var(--basic-red);
   color: var(--basic-white);
+  text-align: center;
 }
 
 .product {
@@ -507,6 +628,12 @@ img {
   border-top: 7px solid var(--basic-red);
 }
 
+.modal-message {
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
 .submitting-button {
   outline: none;
   border: none;
@@ -516,6 +643,10 @@ img {
 
 .submitting {
   background-color: var(--greylight);
+}
+
+.modal-bottom {
+  background-color: var(--extra-light-color);
 }
 /* .slide1 {
   background-image: url("../img/promo-slide1.png");
