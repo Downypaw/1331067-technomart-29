@@ -248,16 +248,6 @@ img {
   background-color: var(--dark-blue-click);
 }
 
-.button-white {
-  background-color: var(--basic-white);
-  text-decoration: none;
-  color: var(--basic-black);
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .button {
   background-color: var(--basic-red);
   color: var(--basic-white);
@@ -266,6 +256,11 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.button-white {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 .button:hover,
@@ -283,14 +278,11 @@ img {
   color: var(--basic-white);
 }
 
-.promo a {
-  color: var(--basic-white);
-  text-decoration: none;
-}
-
 .promo-link {
   background-color: var(--white-promo-button);
   text-align: center;
+  color: var(--basic-white);
+  text-decoration: none;
 }
 
 .promo-link:hover,
@@ -481,10 +473,7 @@ img {
 .buy-button {
   background-color: var(--bright-green);
   color: var(--basic-white);
-  font-size: 14px;
-  line-height: 18px;
   box-shadow: inset 0px -3px 0px #367315;
-  text-transform: uppercase;
 }
 
 .buy-button:hover,
@@ -499,7 +488,7 @@ img {
 .bookmark-link {
   border: 3px solid var(--bright-green);
   color: var(--dark-blue);
-  text-transform: uppercase;
+  background-color: transparent;
 }
 
 .bookmark-link:hover,
