@@ -197,6 +197,11 @@ img {
   background-color: var(--basic-white);
 }
 
+.user-logout {
+  color: white;
+  /* Так этот элемент будет скрыт, просто добавила свойство, чтобы сделать pull request */
+}
+
 .user-menu {
   color: var(--dark-blue);
   padding: 0;
