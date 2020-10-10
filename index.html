@@ -17,6 +17,9 @@
         <a href="#" class="logo header-logo"><img src="img/logo-technomart-header.svg" width="108" height="18" class="logo-image-header"></a>
         <div class="searching-option">
           <form method="get" name="searching-form" class="search-form">
+            <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+              <path fill-opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white" />
+            </svg>
             <input type="search" name="search-field" placeholder="Поиск:" class="search">
           </form>
         </div>
@@ -353,29 +356,32 @@
     </div>
   </footer>
   <section class="modal feedback-form-popup">
-    <h2>Форма обратной связи</h2>
+    <h2 class="visually-hidden">Форма обратной связи</h2>
     <form>
-      <p>
-        <label for="name-field">Ваше имя:</label>
-        <input type="text" name="client-name" id="name-field" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="email-field">Ваш e-mail:</label>
-        <input type="email" name="client-email" id="email-field" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="letter">Текст письма:</label>
-        <textarea id="letter" placeholder="В свободной форме"></textarea>
-      </p>
+      <div class="modal-form-content">
+        <p class="part-name">
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" class="name-field" name="client-name" id="name-field" placeholder="Имя Фамилия">
+        </p>
+        <p class="part-email">
+          <label for="email-field">Ваш e-mail:</label>
+          <input type="email" class="email-field" name="client-email" id="email-field" placeholder="email@example.com">
+        </p>
+        <p class="part-letter">
+          <label for="letter">Текст письма:</label>
+          <textarea id="letter" class="letter-field" placeholder="В свободной форме"></textarea>
+        </p>
+      </div>
       <div class="submitting">
         <input type="submit" class="button button-red submitting-button" value="Отправить">
       </div>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </form>
   </section>
   <section class="modal map-popup">
-    <h2>Как до нас добраться</h2>
-    <!-- Здесь будет карта -->
-    <button type="button" class="close-map-button">Закрыть</button>
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651625!2d30.320894615723475!3d59.93879418187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1602336261204!5m2!1sru!2sru" width="943" height="450" title="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
 
