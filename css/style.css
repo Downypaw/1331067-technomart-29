@@ -2178,6 +2178,7 @@ img {
   text-align: center;
   margin-top: 66px;
   margin-bottom: 67.43px;
+  position: relative;
 }
 
 .submitting-button {
@@ -2222,14 +2223,18 @@ img {
   padding: 11px 0 9px 0;
 }
 
+.modal-button:last-of-type {
+  margin-right: 0;
+}
+
 .modal-button-red {
   padding-left: 47px;
   padding-right: 46px;
 }
 
 .modal-button-white {
-  padding-left: 32px;
-  padding-right: 31px;
+  padding-left: 33px;
+  padding-right: 30px;
 }
 
 .modal {
@@ -2239,16 +2244,33 @@ img {
   bottom: 0;
   left: 0;
   margin: auto;
+  bottom: auto;
   filter: drop-shadow(0px 4px 20px var(--shadow-color));
   border-top: 6px solid var(--basic-red);
   display: none;
+}
+
+.modal-cart-message {
+  width: 620px;
+  background-color: var(--basic-white);
+  top: 120px;
+  box-sizing: border-box;
+}
+
+.modal-message::before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  background: url('../img/icon-mark.svg');
+  top: -19px;
+  left: 80px;
 }
 
 .map-popup {
   width: 943px;
   top: 120px;
   background-color: var(--basic-white);
-  bottom: auto;
   height: 449px;
   display: none;
 }
