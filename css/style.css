@@ -110,7 +110,7 @@ img {
   padding: 12px 57px 17px 55px;
 }
 
-.header-logo:active {
+.logo:active {
   background-color: var(--red-click);
 }
 
@@ -972,6 +972,15 @@ img {
   cursor: pointer;
 }
 
+.filter-button:hover,
+.filter-button:focus {
+  border: 1px solid var(--basic-lightgrey);
+}
+
+.filter-button:active {
+  border: 1px solid var(--basic-red);
+}
+
 .range-filter {
   width: 220px;
   margin-top: 11px;
@@ -1038,19 +1047,11 @@ img {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   text-align: center;
-  width: 82px;
-  padding: 9px 0 11px 13px;
   margin-right: 25px;
   color: #283136;
   border: none;
   border-radius: 5px;
   background: var(--extralight-brown);
-}
-
-.price-controls input:nth-child(2) {
-  margin-right: 0;
-  padding-left: 17px;
-  width: 78px;
 }
 
 .sort {
@@ -1060,6 +1061,18 @@ img {
 
 .price-controls {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.max-price {
+  width: 87px;
+  padding: 9px 0 11px 15px;
+}
+
+.min-price {
+  width: 82px;
+  padding: 9px 0 11px 13px;
 }
 
 .price-controls::after {
@@ -1106,6 +1119,14 @@ img {
   width: 18px;
   height: 18px;
   border: 2px solid var(--basic-lightgrey);
+  border-radius: 2px;
+}
+
+.choosing-manufacturers:checked + .brand-name::before {
+  border: none;
+  background: url('../img/checkbox.svg');
+  width: 23px;
+  height: 23px;
 }
 
 .choosing-manufacturers:checked + .brand-name::after {
@@ -1150,6 +1171,17 @@ img {
   top: -2px;
 }
 
+
+.choosing-manufacturers:checked:checked + .brand-name:hover::before,
+.choosing-manufacturers:checked:checked + .brand-name:focus::before {
+  border: none;
+  background: url('../img/checkbox-dark.svg');
+}
+
+.choosing-manufacturers:checked:checked + .brand-name:active::before {
+  opacity: 0.4;
+}
+
 .filter-manufacturers {
   margin-bottom: 4px;
 }
@@ -1171,6 +1203,10 @@ img {
   text-transform: uppercase;
   font-size: 15px;
   font-family: "PT Sans", Arial, sans-serif;
+}
+
+.energy-type-name:active {
+  opacity: 0.4;
 }
 
 .filter-part-energy {
@@ -1402,13 +1438,12 @@ img {
   padding-right: 30px;
 }
 
-
-.catalog-page:hover,
-.catalog-page:focus {
+.catalog-page:not(.active-page):hover,
+.catalog-page:not(.active-page):focus {
   border: 1px solid var(--basic-lightgrey);
 }
 
-.catalog-page:active {
+.catalog-page:not(.active-page):active {
   border: 1px solid var(--basic-red);
 }
 
