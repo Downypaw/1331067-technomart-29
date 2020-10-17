@@ -1903,6 +1903,7 @@ img {
   margin: 0;
   font-weight: normal;
   margin-bottom: 20px;
+  margin-top: 3px;
 }
 
 .information:nth-of-type(1) {
@@ -1987,7 +1988,6 @@ img {
 
 .title-contacts {
   margin-left: -1px;
-  margin-top: -1px;
 }
 
 .about-company {
