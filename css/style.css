@@ -1546,7 +1546,7 @@ img {
   border-radius: 3px;
   padding-right: 11px;
   display: inline-block;
-  margin-top: 31px;
+  margin-top: 30px;
 }
 
 .product:first-child .current-price {
@@ -1598,10 +1598,6 @@ img {
 }
 
 .previous-price ~ .current-price {
-  margin-top: 15px;
-}
-
-.previous-price ~ .catalog-price {
   margin-top: 13px;
 }
 
@@ -1707,7 +1703,7 @@ img {
 
 .manufacturer {
   border: 1px solid var(--border-grey);
-  height: 145px;
+  height: 143px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
