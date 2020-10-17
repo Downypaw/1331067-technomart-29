@@ -346,12 +346,16 @@ img {
   background-color: var(--basic-white);
   text-align: center;
   display: inline-block;
-  padding: 12px 24px 12px 24px;
+  padding: 10px 23px 14px 25px;
   margin-right: 0;
 }
 
+.icon-login {
+  margin-top: 2px;
+}
+
 .login-link {
-  padding: 12px 27px 12px 19px;
+  padding: 10px 27px 14px 20px;
   margin-right: 6px;
   position: relative;
 }
