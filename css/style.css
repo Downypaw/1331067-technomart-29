@@ -2286,7 +2286,6 @@ img {
   bottom: auto;
   filter: drop-shadow(0px 4px 20px var(--shadow-color));
   border-top: 6px solid var(--basic-red);
-  display: none;
 }
 
 .modal-cart-message {
@@ -2294,6 +2293,7 @@ img {
   background-color: var(--basic-white);
   top: 120px;
   box-sizing: border-box;
+  display: none;
 }
 
 .modal-message::before {
@@ -2324,7 +2324,6 @@ img {
   top: 120px;
   bottom: auto;
   box-sizing: border-box;
-  display: none;
 }
 
 .modal-form-content {
@@ -2356,12 +2355,12 @@ img {
   border-radius: 2px;
   margin-top: 10px;
   box-sizing: border-box;
+  padding-left: 8px;
 }
 
 .name-field::placeholder,
 .email-field::placeholder,
 .letter-field::placeholder {
-  padding-left: 8px;
   vertical-align: middle;
   font-family: "PT Sans", Arial, sans-serif;
   color: var(--modal-color);
