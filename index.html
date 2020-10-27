@@ -128,7 +128,7 @@
           </div>
           <div class="slide-controls">
             <button class="button-slide" aria-label="Первый слайд"></button>
-            <button class="button-slide button-slide-active" aria-label="Второй слайд"></button>
+            <button class="button-slide" aria-label="Второй слайд"></button>
           </div>
         </div>
       </div>
@@ -218,12 +218,12 @@
         <p class="block-introduction">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="section-parts">
           <div class="section-names">
-            <a class="active-menu menu">Доставка</a>
-            <a class="menu">Гарантия</a>
-            <a class="menu">Кредит</a>
+            <a class="active-menu menu menu-delivery">Доставка</a>
+            <a class="menu menu-guarantee">Гарантия</a>
+            <a class="menu menu-credit">Кредит</a>
           </div>
           <div class="section-slides">
-            <div class="section-delivery section-part hidden-slide">
+            <div class="section-delivery section-part">
               <h3 class="service-name service-delivery">Доставка</h3>
               <p class="service-info delivery-info">Мы с удовольствием доставим ваш товар прямо
                 <br>
@@ -234,7 +234,7 @@
                 поднимая его на ваш этаж!
               </p>
             </div>
-            <div class="section-guarantee section-part">
+            <div class="section-guarantee section-part hidden-slide">
               <h3 class="service-name service-guarantee">Гарантия</h3>
               <p class="service-info guarantee-info">Если купленный у нас товар поломается или заискрит,
                 а также в случае пожара, спровоцированного его
@@ -354,7 +354,7 @@
   <section class="modal-window modal-window-form">
     <div class="modal feedback-form-popup">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form>
+      <form class="filter-content" method="get" action="https://echo.htmlacademy.ru">
         <div class="modal-form-content">
           <p class="part-name">
             <label for="name-field">Ваше имя:</label>

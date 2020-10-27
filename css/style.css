@@ -1785,8 +1785,8 @@ img {
 }
 
 .services {
-  padding-top: 38px;
-  padding-bottom: 88px;
+  padding-top: 42px;
+  padding-bottom: 84px;
 }
 
 .section-parts {
@@ -1826,6 +1826,12 @@ img {
 
 .menu:last-child {
   padding-bottom: 15.5px;
+  filter: none;
+}
+
+.menu:last-child:active {
+  filter: none;
+  border-bottom: 2px solid var(--basic-white);
 }
 
 .menu:first-child {
