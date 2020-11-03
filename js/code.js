@@ -76,7 +76,6 @@ if (page) {
 
   let slideIndex = 2;
   showSlides(slideIndex);
-
   buttonNext.addEventListener("click", function nextSlide() {
     showSlides(slideIndex += 1);
     addActiveClass(slideIndex);
@@ -90,29 +89,26 @@ if (page) {
   function currentSlide(n) {
     showSlides(slideIndex = n);
     addActiveClass(slideIndex);
-  }
+  };
 
   currentSlide(slideIndex);
 
   function addActiveClass(n) {
     let slidesButton = document.getElementsByClassName("button-slide");
-
     for (let button of slidesButton) {
       button.classList.remove("button-slide-active");
     }
     slidesButton[slideIndex - 1].classList.add("button-slide-active");
-  }
+  };
 
   function showSlides(n) {
     let slides = document.getElementsByClassName("slide");
-
     if (n > slides.length) {
       slideIndex = 1
     }
     if (n < 1) {
       slideIndex = slides.length
     }
-
     for (let slide of slides) {
       slide.style.display = "none";
     }
@@ -136,7 +132,6 @@ if (page) {
       }
     }
   });
-
   let isStorageSupport = true;
   let storage = {
     name: "",
@@ -148,7 +143,7 @@ if (page) {
     storage.email = localStorage.getItem("email");
   } catch (err) {
     isStorageSupport = false;
-  }
+  };
 
   closes.forEach((close) => close.addEventListener("click", function(evt) {
     evt.preventDefault();
@@ -168,7 +163,6 @@ if (page) {
   writeUsButton.addEventListener("click", function(evt) {
     evt.preventDefault();
     popupForm.classList.add("modal-show");
-
     if (storage.name && storage.email) {
       name.value = storage.name;
       email.value = storage.email;
