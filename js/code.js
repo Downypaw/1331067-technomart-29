@@ -9,9 +9,9 @@ const page = document.querySelector(".page");
 if (page) {
   const linkMap = document.querySelector(".map");
   const writeUsButton = document.querySelector(".write-us-button");
-  const popupForm = document.querySelector(".modal-window-form");
   const popupMap = document.querySelector(".modal-window-map");
-  const form = document.querySelector(".form-letter");
+  const popupForm = document.querySelector(".modal-window-form");
+  const form = popupForm.querySelector(".form-letter");
   const name = popupForm.querySelector("[name=name]");
   const email = popupForm.querySelector("[name=email]");
   const letter = popupForm.querySelector("[name=letter]");
@@ -29,6 +29,9 @@ if (page) {
   form.addEventListener("submit", function(evt) {
     if (!name.value || !email.value || !letter.value) {
       evt.preventDefault();
+      form.classList.remove("modal-error");
+      form.offsetWidth = form.offsetWidth;
+      form.classList.add("modal-error");
     } else {
       localStorage.setItem("name", name.value);
       localStorage.setItem("email", email.value);
@@ -120,6 +123,7 @@ if (page) {
       if (popupForm.classList.contains("modal-show")) {
         evt.preventDefault();
         popupForm.classList.remove("modal-show");
+        form.classList.remove("modal-error");
       }
     }
   });
@@ -153,6 +157,7 @@ if (page) {
   closes.forEach((close) => close.addEventListener("click", function(evt) {
     evt.preventDefault();
     popupForm.classList.remove("modal-show");
+    form.classList.remove("modal-error");
   }));
 
   linkMap.addEventListener("click", function(evt) {
