@@ -1408,7 +1408,7 @@ img {
 .sorting-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 7px 0 8px 0;
+  padding: 8px 0 7px 0;
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: normal;
   font-size: 13px;
@@ -1449,7 +1449,7 @@ img {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-bottom: 10px solid var(--basic-lightgrey);
-  top: 15px;
+  top: 13px;
   right: 48px;
 }
 
@@ -1465,7 +1465,7 @@ img {
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 10px solid var(--basic-lightgrey);
-  top: 15px;
+  top: 13px;
   right: 17px;
 }
 
