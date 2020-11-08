@@ -1877,41 +1877,39 @@ img {
 }
 
 .logo-bosch {
-  margin-top: 8px;
-  margin-right: 1px;
+  margin-top: 1px;
 }
 
 .logo-makita {
-  margin-left: -1px;
-  margin-top: 3px;
+  margin-top: -4px;
 }
 
 .logo-dewalt {
-  margin-top: 4px;
-  margin-right: 1px;
+  margin-top: -4px;
 }
 
 .logo-interscol {
-  margin-top: 7px;
-  margin-right: 3px;
+  margin-right: 2px;
 }
 
 .logo-hitachi {
-  margin-top: 10px;
-  margin-left: 4px;
+  margin-top: 6px;
+  margin-left: 6px;
 }
 
 .logo-lg {
-  margin-top: 6px;
-  margin-right: 4px;
+  margin-top: 3px;
+  margin-right: 2px;
 }
 
 .logo-aeg {
-  margin-top: 9px;
+  margin-top: 6px;
+  margin-left: 1px;
 }
 
 .logo-metabo {
-  margin-top: 8px;
+  margin-top: 5px;
+  margin-left: 2px;
 }
 
 .manufacturer:hover,
